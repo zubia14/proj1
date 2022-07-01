@@ -8,36 +8,55 @@ public abstract class Log {
     private String title;
     private String content;
     private Date createTimestamp;
-    
+
+    public Log() {
+    }
+
+    public Log(String title, String content) {
+        this.id = UUID.randomUUID();
+        this.title = title;
+        this.content = content;
+        this.createTimestamp = new Date();
+    }
+
+    // get id
     public UUID getId() {
-    	return id;   	
+        return id;
     }
-    
+
+    // set id
     public void setId(UUID id) {
-    	this.id=id;
+        this.id = id;
     }
-    
+
+    // get title
     public String getTitle() {
-    	return title;
+        return title;
     }
-    
+
+    // set title
     public void setTitle(String title) {
-    	this.title=title;
+        this.title = title;
     }
-    
+
+    // get content
     public String getContent() {
-    	return content;
+        return content;
     }
-    
+
+   // set content
     public void setContent(String content) {
-    	this.content=content;
+        this.content = content;
     }
-    
+
+   // get createTimestamp
     public Date getCreateTimestamp() {
-    	return createTimestamp;
+        return createTimestamp;
     }
     
+    // set createTimestamp    
     public void setCreateTimestamp(Date createTimestamp) {
-    	this.createTimestamp=createTimestamp;
+        this.createTimestamp = createTimestamp;
     }
+
 }
