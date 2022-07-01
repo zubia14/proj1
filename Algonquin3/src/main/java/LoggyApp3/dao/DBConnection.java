@@ -19,7 +19,7 @@ public class DBConnection {
             // get hold of the DriverManager
             connection = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/loggyuserinfo",
-                    "root", "password");
+                    "root", "8552369279abc$");
             
    
         } catch (ClassNotFoundException e) {
